@@ -12,3 +12,7 @@ suma()
 def imprime():
     print('Esta es la rama para desarrollar backend')
 imprime()
+
+def mostrar():
+    print('Esta rama esta destinada para los cambios en el frontend')
+mostrar()
