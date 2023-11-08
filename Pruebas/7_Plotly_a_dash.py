@@ -7,7 +7,7 @@ import pandas as pd
 app = Dash(__name__)
 
 # Carga datos
-df_iris = pd.read_csv(r'D:\Rigo\Rigo\Documentacion Tec Monterrey\Semestre Agosto-Diciembre\Analítica de datos y herramientas de IA II\Dash\iris_dataset.csv',encoding = 'ISO-8859-1',delimiter=',')
+df_iris = pd.read_csv(r'D:\Tecnologico de Monterrey\Clases\Semestre 7\Analitica II\UF5\Pruebas\iris_dataset.csv',encoding = 'ISO-8859-1',delimiter=',')
 
 #Objetos plotly.graph
 data1 = [go.Scatter(x=df_iris["longitud_sépalo"],
