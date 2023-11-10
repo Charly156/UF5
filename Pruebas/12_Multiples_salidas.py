@@ -7,7 +7,7 @@ import plotly.graph_objs as go
 app = Dash(__name__)
 
 #Carga de datos
-df = pd.read_excel(r'D:\Rigo\Rigo\Documentacion Tec Monterrey\Semestre Agosto-Diciembre\Analítica de datos y herramientas de IA II\Dash\Info_pais.xlsx')
+df = pd.read_excel(r'D:\Tecnologico de Monterrey\Clases\Semestre 7\Analitica II\UF5\Pruebas\Info_pais.xlsx')
 
 variables = df.columns #Lista con las columnas del dataframe se estarán en los dropdowns
 

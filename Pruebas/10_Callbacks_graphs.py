@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 
 
 #Carga de datos
-df_temp = pd.read_excel(r'D:\Rigo\Rigo\Documentacion Tec Monterrey\Semestre Agosto-Diciembre\Analítica de datos y herramientas de IA II\Dash\Temperaturas.xlsx')
+df_temp = pd.read_excel(r'D:\Tecnologico de Monterrey\Clases\Semestre 7\Analitica II\UF5\Pruebas\Temperaturas.xlsx')
 
 app = Dash(__name__)
 
