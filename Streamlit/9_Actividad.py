@@ -13,6 +13,15 @@ data['Day'] = data['timestamp'].dt.day_name()
 st.title('Análisis de datos tabulares')
 st.dataframe(data)
 
+#Selección y contro de fechas
+st.sidebar.header('Control de Fechas')
+start_date = st.sidebar.date_input('Seleccionar fecha de inicio', data['timestamp'].min())
+end_date = st.sidebar.date_input('Seleccionar fecha de fin', data['timestamp'].max())
+
+#Convertir objetos a datetime64[ns]
+start_date = pd.to_datetime(start_date)
+end_date = pd.to_datetime(end_date)
+
 # Añadir un selectbox para elegir el tipo de gráfico
 chart_type = st.sidebar.selectbox('Selecciona el tipo de gráfico que desee visualizar', 
                           ['Gráfico de líneas', 'Gráfico de áreas', 'Gráfico de barras',
